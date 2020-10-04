@@ -22,7 +22,17 @@ $ python3 TimeStamper.py
 > TimeStamper.py
 ```
 
-## How to use
+### Alternatively
+
+Download the latest release [here](https://github.com/AbsurdUsername/TimeStamper/releases/)
+
+### Or build it yourself
+```
+$ pip install pyinstaller
+$ pyinstaller [-F] [-i icon.ico] TimeStamper.py
+```
+
+### How to use
 1. Enter the name of the file where you'll save the timestamps
 2. Press enter to start the stopwatch
 3. When you want to timestamp press enter or any key
