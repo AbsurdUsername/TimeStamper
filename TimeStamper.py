@@ -11,35 +11,46 @@ def convert(seconds):
     return "%d:%02d:%02d" % (hour, minutes, seconds) 
 
 
+print('___          ___  __  ___             __   ___  __  ')
+print(' |  |  |\/| |__  /__`  |   /\   |\/| |__) |__  |__) ')
+print(' |  |  |  | |___ .__/  |  /~~\  |  | |    |___ |  \ ')
+print('\n')
+                                                    
+
 
 date = date.today()
 today = date.strftime("%d_%m_%Y")
-
 
 subj = input('File name >> ')
 namefile = subj + '_' + str(today) + '.txt'
 
 ctrlString = input('Press enter to start >>')
-t0 = time.time()
+timeStart = time.time()
+
 
 while (ctrlString != 'stop' and ctrlString != 'Stop' and ctrlString != 'STOP'):
-    print('Press enter or any key to timestamp or write \'stop\' to end')
+    print('Press enter or any key to timestamp, write \'stop\' to end')
     ctrlString = input('>>')
+
     if (ctrlString != 'stop' or ctrlString != 'Stop' or ctrlString != 'STOP'):
-        t2 = time.time()
-        lap = t2 - t0
+
+        timeLap = time.time()
+        lap = timeLap - timeStart
         lap = convert(lap)
         print('Timestamp saved: ', lap)
+
         file = open(namefile, "a")
         file.write('Timestamp: ')
         file.write(str(lap))
         file.write('\n')
         file.close()
 
-t1 = time.time()
-total = t1 - t0
+
+timeEnd = time.time()
+total = timeEnd - timeStart
 total = convert(total)
 print('Total time: ', total)
+
 file = open(namefile, "a")
 file.write('Total time: ')
 file.write(str(total))
