@@ -27,3 +27,9 @@ $ python3 TimeStamper.py
 2. Press enter to start the stopwatch
 3. When you want to timestamp press enter or any key
 4. To stop it type ```stop``` ( it's **not** case sensitive)
+
+**You can use the same file multiple times**
+
+![](Images/cmd.png)
+
+![](Images/notepad.png)
