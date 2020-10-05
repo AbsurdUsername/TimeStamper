@@ -1,6 +1,6 @@
 # TimeStamper
 
-## Lightweight program to take timestamp, just like with your stopwatch 
+## Lightweight program to take timestamps, just like with your stopwatch 
 
 ## Requirements Linux/Windows
 - Python 3.x
