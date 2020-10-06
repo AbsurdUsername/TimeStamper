@@ -32,7 +32,7 @@ while (ctrlString != 'stop' and ctrlString != 'Stop' and ctrlString != 'STOP'):
     print('Press enter or any key to timestamp, write \'stop\' to end')
     ctrlString = input('>>')
 
-    if (ctrlString != 'stop' or ctrlString != 'Stop' or ctrlString != 'STOP'):
+    if (ctrlString != 'stop' and ctrlString != 'Stop' and ctrlString != 'STOP'):
 
         timeLap = time.time()
         lap = timeLap - timeStart
